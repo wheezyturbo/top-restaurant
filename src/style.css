@@ -1,0 +1,4 @@
+*,*::before,*::after{
+    background-color: black;
+    color:white;
+}
