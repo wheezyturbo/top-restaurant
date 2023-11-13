@@ -1,85 +1,130 @@
-@import url("https://fonts.googleapis.com/css?family=Architects Daughter:700|Architects Daughter:400|Architects Daughter:600");
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/architectsdaughter/v18/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 :root[data-theme="light"] {
-    --text: #010104;
-    --background: #f7f6fe;
-    --primary: #8c174c;
-    --secondary: #fafbe9;
-    --accent: #3adf95;
-    --hover-color: #626265;
-  }
-  :root[data-theme="dark"] {
-    --text: #fbfbfe;
-    --background: #020109;
-    --primary: #e873a8;
-    --secondary: #151604;
-    --accent: #20c57b;
-    --hover-color: #626265;
-  }
-  
-  body {
-    font-family: "Architects Daughter";
-    font-weight: 400;
-    background-color: var(--background);
-    color: var(--text);
-    transition: 0.3s ease-in;
-    height:100vh;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Architects Daughter";
-    font-weight: 700;
-  }
-  
-  html {
-    font-size: 16px;
-  } /* 16px */
-  
-  h1 {
-    font-size: 3.053rem; /* 48.8px */
-  }
-  
-  h2 {
-    font-size: 2.442rem; /* 39.04px */
-  }
-  
-  h3 {
-    font-size: 1.954rem; /* 31.2px */
-  }
-  
-  h4 {
-    font-size: 1.563rem; /* 24.96px */
-  }
-  
-  h5 {
-    font-size: 1.25rem; /* 20px */
-  }
-  
-  small {
-    font-size: 0.8rem; /* 12.8px */
-  }
+  --text: #010104;
+  --background: #f7f6fe;
+  --primary: #8c174c;
+  --secondary: #fafbe9;
+  --accent: #3adf95;
+  --hover-color: #626265;
+}
+:root[data-theme="dark"] {
+  --text: #fbfbfe;
+  --background: #020109;
+  --primary: #e873a8;
+  --secondary: #151604;
+  --accent: #20c57b;
+  --hover-color: #626265;
+}
 
+body {
+  font-family: "Architects Daughter";
+  font-weight: 400;
+  background-color: var(--background);
+  color: var(--text);
+  transition: 0.3s ease-in;
+  height: 100vh;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Architects Daughter";
+  font-weight: 700;
+}
 
-  #content{
-    height:100vh;
-    width:100vw;
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-  }
+html {
+  font-size: 16px;
+} /* 16px */
 
-  .banner{
-    height:100px;
-  }
+h1 {
+  font-size: 3.053rem; /* 48.8px */
+}
 
-  .navbar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-  }
-  .current{
-  }
+h2 {
+  font-size: 2.442rem; /* 39.04px */
+}
+
+h3 {
+  font-size: 1.954rem; /* 31.2px */
+}
+
+h4 {
+  font-size: 1.563rem; /* 24.96px */
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+small {
+  font-size: 0.8rem; /* 12.8px */
+}
+
+#content {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.banner {
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.active {
+  color: green;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container {
+  display: flex;
+  /* background: #20c57b; */
+  position: relative;
+  width: 50%;
+  justify-content: space-evenly;
+  /* align-items: flex-end; */
+  flex-wrap: wrap-reverse;
+}
+
+.home-container > img {
+  /* filter: blur(2px) grayscale(); */
+  box-shadow: 10px 1px 20px -4px black;
+  transform: rotate(90deg);
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  height: 400px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 100px;
+}
+
+.home-container>h1{
+  width: 50%;
+}
