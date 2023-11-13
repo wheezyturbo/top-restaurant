@@ -12,18 +12,7 @@ import Init from './components/init.js';
 
 window.addEventListener("load", Init);
 
-function navigation(){
-  const links = navbar.querySelectorAll('.link');
-  console.log(links);
 
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      // e.stopPropagation();
-      // e.preventDefault();
-      render(e.target.textContent);
-    });
-  });
-}
 
 function Header(currentPage) {}
 
