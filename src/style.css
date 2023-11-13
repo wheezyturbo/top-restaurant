@@ -1,4 +1,85 @@
-*,*::before,*::after{
-    background-color: black;
-    color:white;
-}
+@import url("https://fonts.googleapis.com/css?family=Architects Daughter:700|Architects Daughter:400|Architects Daughter:600");
+
+:root[data-theme="light"] {
+    --text: #010104;
+    --background: #f7f6fe;
+    --primary: #8c174c;
+    --secondary: #fafbe9;
+    --accent: #3adf95;
+    --hover-color: #626265;
+  }
+  :root[data-theme="dark"] {
+    --text: #fbfbfe;
+    --background: #020109;
+    --primary: #e873a8;
+    --secondary: #151604;
+    --accent: #20c57b;
+    --hover-color: #626265;
+  }
+  
+  body {
+    font-family: "Architects Daughter";
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+    transition: 0.3s ease-in;
+    height:100vh;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Architects Daughter";
+    font-weight: 700;
+  }
+  
+  html {
+    font-size: 16px;
+  } /* 16px */
+  
+  h1 {
+    font-size: 3.053rem; /* 48.8px */
+  }
+  
+  h2 {
+    font-size: 2.442rem; /* 39.04px */
+  }
+  
+  h3 {
+    font-size: 1.954rem; /* 31.2px */
+  }
+  
+  h4 {
+    font-size: 1.563rem; /* 24.96px */
+  }
+  
+  h5 {
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  small {
+    font-size: 0.8rem; /* 12.8px */
+  }
+
+
+
+  #content{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+  }
+
+  .banner{
+    height:100px;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+  }
+  .current{
+  }
