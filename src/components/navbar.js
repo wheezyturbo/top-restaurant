@@ -23,8 +23,20 @@ export default function Navbar(pageClass){
     navbar.appendChild(link_);
     
   })
+  const modeBtn = document.createElement('button');
+  modeBtn.textContent = "mode";
+  modeBtn.addEventListener('click',()=>{
+    const mode = document.documentElement.getAttribute('data-theme');
+    document.documentElement.setAttribute('data-theme',modeSwitch(mode));
+  })
+  navbar.appendChild(modeBtn);
   return navbar;
   // const link1 = createLink("home",pageClass);
   // const link2 = createLink("menu",pageClass);
   // const link3 = createLink("contact",pageClass);
+}
+
+
+function modeSwitch(mode){
+  return mode == 'light'?'dark':'light';
 }
