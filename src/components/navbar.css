@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+  }
+  .active {
+    color: green;
+  }
+  
+  .link {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .mode-btn{
+    border:none;
+    background: transparent;
+    color:var(--text);
+  }

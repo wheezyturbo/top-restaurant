@@ -79,23 +79,11 @@ small {
   grid-template-rows: 1fr 3fr;
 }
 
-.banner {
+/* .banner {
   height: 100px;
-}
+} */
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.active {
-  color: green;
-}
 
-.link {
-  cursor: pointer;
-  font-size: 1.5rem;
-}
 .container {
   display: flex;
   justify-content: center;
