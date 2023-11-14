@@ -46,8 +46,8 @@ export default function menubar() {
     img.classList.add("card-img");
     img.src = item.image;
     card.appendChild(h1);
-    card.appendChild(description);
     card.appendChild(img);
+    card.appendChild(description);
     menuItems.appendChild(card);
   });
   return menu;
